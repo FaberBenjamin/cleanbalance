@@ -63,7 +63,7 @@ export const PricePage = ({scrollToPage}) => {
           <Typography sx={{ fontStyle: "italic", fontSize: "14px" }}>* napi, heti, havi rendszerességgel egyedi árajánlat az alábbi termékekre:</Typography>
           <Typography sx={{ fontStyle: "italic", fontSize: "14px" }}>Általános takarítás (napi, heti rendszerességgel): br. 250ft - 450ft / m^2</Typography>
           <Typography sx={{ fontStyle: "italic", fontSize: "14px" }}>Nagytakarítás (havi, kéthavi rendszerességgel): br. 510ft - 640ft / m^2</Typography>
-          <Typography sx={{ fontStyle: "italic", fontSize: "14px" }}>Az egyedi árajánlat tartalmazza a tisztítószer-költséget, a kiszállási díjat, illetve a géphasználati díjat. A parkolási díjat viszont <strong>nem</strong> tartalmazza!</Typography>
+          <Typography sx={{ fontStyle: "italic", fontSize: "14px" }}>A folyamatos megbízás tartalmazza a tisztítószer-költséget, a kiszállási díjat, illetve a géphasználati díjat. A parkolási díjat viszont <strong>nem</strong> tartalmazza!</Typography>
         </Alert>
       </Box>
     </Box>

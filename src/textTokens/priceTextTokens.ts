@@ -1,6 +1,6 @@
 export const PriceTextTokens = [
   {
-    cardPrice: "br. 4000 / fő / óra",
+    cardPrice: "br. 4000ft / fő / óra",
     tableTitle: "Általános takarítás",
     tableDescription:
       ["Az Általános takarítási szolgáltatásunkban a leggyakoribb otthoni takarítási feladatokat végezzük el. Ide tartozik a nagyobb tárgyakon való portörlés, mint például bútorokon, valamint a porszívózás és a felmosás. Emellett gondoskodunk a csempék, mosdókagylók, zuhanytálca és kád tisztításáról, valamint a WC teljes körű takarításáról. Szolgáltatásunk része továbbá a tűzhely és a mikrohullámú sütő kisebb takarítása is.", "Fontos kiemelni, hogy mindezeket a feladatokat képzett csapatunkkal végzzük, akik hatékonyan dolgoznak  és kiváló minőségű munkát nyújtanak. Az ár 4000 Ft/fő/óra, és a takarítást mindig ketten végzik,  mivel így nemcsak hatékonyabbak vagyunk, hanem időt is spórolunk mindannyiunk számára. Hiszünk  abban, hogy a csapatmunka segítségével jobb eredményeket érhetünk el, és minden ügyfelünk  elégedett lesz a végeredménnyel.","  Bízunk benne, hogy ezekkel a szolgáltatásokkal otthona tiszta és friss lesz, így Önnek csak a  kényelmes otthon élvezetére kelljen koncentrálnia."],
@@ -86,7 +86,7 @@ export const PriceTextTokens = [
     ],
   },
   {
-    cardPrice: "br. 6100-8700 / fő / óra",
+    cardPrice: "br. 6100-8700ft / fő / óra",
     tableTitle: "Extrém nagytakarítás",
     tableDescription:
       ["Az extrém takarítás olyan kihívást jelent, amelyben a gyűjtögető életmód által felhalmozódott hulladék és szemét teljes megsemmisítésére vagy átalakítására törekszünk. Az ilyen típusú takarítás során a nem használt tárgyak nagy mennyiségével és az elhanyagolt élettérrel kell megbirkózni. A rendkívül elhanyagolt életterekben gyakran szembe találjuk, magunkat szemét heggyel, amelyek között már alig lehet látni a padlót és közlekedni is nehezen lehet. Az extrém takarítás során a cél az, hogy ezeket a területeket megtisztítsák és rendezetté tegyék, megteremtve ezzel az egészséges és élhető környezetet."," Ez a fajta takarítás rendkívüli odafigyelést, erőfeszítést és szakértelmet igényel. A takarítóknak nem csak a felhalmozott szemetet és hulladékot kell eltávolítaniuk, hanem meg kell oldaniuk az esetleges szagproblémákat, fertőtleníteniük kell a felületeket, és vissza kell állítaniuk az élettér funkcionalitását."," Az extrém takarítás ára általában az elvégzendő munka mennyiségétől és a szükséges erőforrásoktól függ. A takarítás összköltsége általában 6100 forinttól egészen 8700 forintig terjedhet, attól függően hogy mekkora területet kell kitakarítani és milyen mértékű a rendrakás szükségessége."],
@@ -168,7 +168,7 @@ export const PriceTextTokens = [
     ],
   },
   {
-    cardPrice: "br. 6100-8700 / fő / óra",
+    cardPrice: "br. 6100-8700ft / fő / óra",
     tableTitle: "Felújítás utáni nagytakarítás",
     tableDescription:
       ["A felújítás utáni takarítás az építkezés után rendszerint szükséges, hogy a frissített tér újra tiszta és lakható legyen. Ez a folyamat különösen fontos, mivel az építkezési munkák során számos lerakódás és piszok keletkezik, mint például festék foltok és cseppek, építési por, vakolatdarabok stb.", "A festék foltok és cseppek eltávolítása általában az egyik legelső lépés a felújítás utáni takarítás során. Ez lehet festékmaradvány a falakon, a padlón, ablakon vagy akár a bútorokon is. Ezeket a foltokat alaposan el kell távolítani a felületekről, hogy a tér újra friss és esztétikus legyen. Az építési por szintén jelentős problémát jelenthet, mivel beleül a felületek pórusaiba és nehezen eltávolítható. A felújítás utáni takarítás során alaposan meg kell tisztítani minden felületet a por lerakódásától, beleértve a falakat, a padlókat, az ablakokat és az ajtókat is.","Az ilyen jellegű takarítás komoly erőfeszítést igényel, és gyakran speciális eszközöket és tisztítószereket is igényel. A szakszerű takarítás és a megfelelő felszerelés használata létfontosságú a felújítás utáni tiszta és rendezett tér eléréséhez",  "Az árak a felújítás utáni takarítás esetén változóak lehetnek, attól függően, hogy mennyi munkát és erőforrást igényel a takarítás. Ára 6100 Ft-tól egészen 8700 Ft-ig terjed, attól függően, hogy mekkora területet kell kitakarítani és milyen nehézségekkel kell megküzdeni a piszok és a foltok eltávolítása során."],
@@ -251,12 +251,12 @@ export const PriceTextTokens = [
   },
  
   {
-    cardPrice: "br. 4450 / fő / óra",
+    cardPrice: "br. 4450ft / fő / óra",
     tableTitle: "Gépi gőztisztítás",
     tableDescription: ["A gépi gőztisztítás egy hatékony és környezetbarát módszer a szennyeződések eltávolítására számos felületről, beleértve a konyhát, fürdőszobát is. Ez a technika forró gőzt használ, amely képes áthatolni a szálak között és feloldani a makacs szennyeződéseket. A gőz emellett természetes fertőtlenítő hatással is rendelkezik, így segít megsemmisíteni a baktériumokat és allergéneket is. Azonban fontos megjegyezni, hogy a gépi gőztisztításnak is vannak korlátai, például a nagyon makacs foltok esetén lehet, hogy több alkalommal kell alkalmazni, és bizonyos típusú anyagokra nem ajánlott. Általában azonban ez a módszer hatékony és kíméletes megoldás a háztartási tisztítási feladatokhoz."]
   },
   {
-    cardPrice: "br. 5750 / fő / óra",
+    cardPrice: "br. 5750ft / fő / óra",
     tableTitle: "Szőnyeg- és Kárpittisztítás",
     tableDescription: ["A gépi szőnyegtisztítás hatékony és gyors megoldást kínál szőnyegeinkben megbújó szennyeződések és foltok eltávolítására. A gépek alaposan tisztítják a szálakat, mélyre hatolva kiszedik a makacs szennyeződéseket is. Ugyanakkor, néha előfordulhat, hogy néhány folt nem távozik teljesen. Fontos tehát, hogy előzetesen felmérjük a szőnyeg állapotát, és reálisan beállítsuk az elvárásainkat a tisztítás eredményeivel kapcsolatban."]
   },

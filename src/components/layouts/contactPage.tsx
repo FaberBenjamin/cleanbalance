@@ -44,6 +44,7 @@ export const ContactPage = ({scrollToPage}) => {
             <FacebookIcon sx={{ ":hover": {color: "blue"}, color: "white" }} />
             Facebook</a>
           </Box>
+          <Typography sx={{ color: "white", textAlign: "center", mt: 2, fontWeight: 'bold' }}>Az esetleges nyomtatási hibákért felelősséget nem vállalunk.</Typography>
         </Grid>
         <Grid item lg={4}>
             <Box sx={{ display: "flex", gap: "5px", justifyContent: "center" }}>
@@ -55,7 +56,7 @@ export const ContactPage = ({scrollToPage}) => {
             <Typography sx={{ color: "white" }}>Berkes Zsuzsanna<br />+36-30-712-0014</Typography>
           </Box>
         </Grid >
-        <Grid ref={contactPageRef} item lg={4}><Typography sx={{ color: "white", textAlign: "center" }}>1182 Budapest, Kosztolányi Dezső utca 1 <br /><br /> Külön irodával nem rendelkezünk, mert nem akarjuk annak fenntartási költségét áthárítani a vásárlókra.</Typography></Grid>
+        <Grid ref={contactPageRef} item lg={4}><Typography sx={{ color: "white", textAlign: "center" }}>1183 Budapest, Kosztolányi Dezső utca 1 <br /><br /> Külön irodával nem rendelkezünk, mert nem akarjuk annak fenntartási költségét áthárítani a vásárlókra.</Typography></Grid>
       </Grid>
     </Box >
   );
