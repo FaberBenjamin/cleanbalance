@@ -24,9 +24,9 @@ export const HomePage = ({ scrollToPage }) => {
 
   const carouselImages = [
     require("../../images/clean-balance.jpg"),
-    // require("../../images/homePage/csap.jpg"),
-    // require("../../images/homePage/csap2.jpg"),
-    // require("../../images/homePage/parkany.jpg"),
+    require("../../images/homePage/csap.jpg"),
+    require("../../images/homePage/csap2.jpg"),
+    require("../../images/homePage/parkany.jpg"),
   ];
 
   useEffect(() => {
