@@ -24,9 +24,9 @@ export const HomePage = ({ scrollToPage }) => {
 
   const carouselImages = [
     require("../../images/clean-balance.jpg"),
-    require("../../images/homePage/csap.jpg"),
-    require("../../images/homePage/csap2.jpg"),
-    require("../../images/homePage/parkany.jpg"),
+    // require("../../images/homePage/csap.jpg"),
+    // require("../../images/homePage/csap2.jpg"),
+    // require("../../images/homePage/parkany.jpg"),
   ];
 
   useEffect(() => {
@@ -72,12 +72,13 @@ export const HomePage = ({ scrollToPage }) => {
                 <Typography
                   variant={isMobileView ? "h1": "h2"}
                   position="absolute"
-                  top={isMobileView ? "25%" : "40%"}
-                  bottom="50%"
+                  top={0}
+                  bottom={0}
                   right={50}
                   left={50}
                   textAlign="center"
                   fontSize={isMobileView ? "3rem" : '110px'}
+                  sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
                 >
                   Üdvözlünk
                 </Typography>
