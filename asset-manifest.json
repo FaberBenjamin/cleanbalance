@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/cleanbalance/static/css/main.134be5f4.css",
-    "main.js": "/cleanbalance/static/js/main.3ef9e396.js",
+    "main.js": "/cleanbalance/static/js/main.568413a7.js",
     "static/js/453.81031a7b.chunk.js": "/cleanbalance/static/js/453.81031a7b.chunk.js",
     "static/media/kilincs.jpg": "/cleanbalance/static/media/kilincs.2b8fea0b9b6625b365c6.jpg",
     "static/media/felfa.jpg": "/cleanbalance/static/media/felfa.f49eba89fa8af0e2b6b6.jpg",
     "static/media/redony-parkany.jpg": "/cleanbalance/static/media/redony-parkany.c764230e842658bd6f6a.jpg",
-    "static/media/parkany.jpg": "/cleanbalance/static/media/parkany.a15586f43fdb22d93db3.jpg",
+    "static/media/parkany.jpg": "/cleanbalance/static/media/parkany.9d0ae6401c044f162b2a.jpg",
     "static/media/mosdokagylo.jpg": "/cleanbalance/static/media/mosdokagylo.9f9fac955aad73360b1f.jpg",
     "static/media/kapcsolo.jpg": "/cleanbalance/static/media/kapcsolo.96aeace2b5dbd3546419.jpg",
     "static/media/csap-vizko.jpg": "/cleanbalance/static/media/csap-vizko.80c2b7848c9622625b87.jpg",
@@ -15,13 +15,15 @@
     "static/media/ajto.jpg": "/cleanbalance/static/media/ajto.c83948bf3a5b28c0babf.jpg",
     "static/media/wc.jpg": "/cleanbalance/static/media/wc.6c2120165d2028448da3.jpg",
     "static/media/clean-balance.jpg": "/cleanbalance/static/media/clean-balance.728c2cf679fecbb391c8.jpg",
+    "static/media/csap.jpg": "/cleanbalance/static/media/csap.b121d45e21fb9f4fceb9.jpg",
+    "static/media/csap2.jpg": "/cleanbalance/static/media/csap2.3ffd8de9a88fab6f22fd.jpg",
     "index.html": "/cleanbalance/index.html",
     "main.134be5f4.css.map": "/cleanbalance/static/css/main.134be5f4.css.map",
-    "main.3ef9e396.js.map": "/cleanbalance/static/js/main.3ef9e396.js.map",
+    "main.568413a7.js.map": "/cleanbalance/static/js/main.568413a7.js.map",
     "453.81031a7b.chunk.js.map": "/cleanbalance/static/js/453.81031a7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.134be5f4.css",
-    "static/js/main.3ef9e396.js"
+    "static/js/main.568413a7.js"
   ]
 }
