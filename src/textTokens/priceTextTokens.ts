@@ -5,7 +5,7 @@ export const PriceTextTokens = [
     tableDescription:
       ["Az Általános takarítási szolgáltatásunkban a leggyakoribb otthoni takarítási feladatokat végezzük el. Ide tartozik a nagyobb tárgyakon való portörlés, mint például bútorokon, valamint a porszívózás és a felmosás. Emellett gondoskodunk a csempék, mosdókagylók, zuhanytálca és kád tisztításáról, valamint a WC teljes körű takarításáról. Szolgáltatásunk része továbbá a tűzhely és a mikrohullámú sütő kisebb takarítása is.", "Fontos kiemelni, hogy mindezeket a feladatokat képzett csapatunkkal végezzük, akik hatékonyan dolgoznak és kiváló minőségű munkát nyújtanak. Az ár 4000 Ft/fő/óra, és a takarítást mindig ketten végzik,  mivel így nemcsak hatékonyabbak vagyunk, hanem időt is spórolunk mindannyiunk számára. Hiszünk  abban, hogy a csapatmunka segítségével jobb eredményeket érhetünk el, és minden ügyfelünk  elégedett lesz a végeredménnyel.","  Bízunk benne, hogy ezekkel a szolgáltatásokkal otthona tiszta és friss lesz, így Önnek csak a  kényelmes otthon élvezetére kelljen koncentrálnia."],
     tableData: [
-      { service: "Pókhálózás", included: false },
+      { service: "Pókhálózás", included: true },
       { service: "Portörlés (nagyobb tárgyak pl.:bútorok)", included: true },
       { service: "Porszívózás", included: true },
       { service: "Felmosás", included: true },
