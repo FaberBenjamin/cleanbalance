@@ -56,7 +56,7 @@ export const ContactPage = ({scrollToPage}) => {
             <Typography sx={{ color: "white" }}>Berkes Zsuzsanna<br />+36-30-712-0014</Typography>
           </Box>
         </Grid >
-        <Grid ref={contactPageRef} item lg={4}><Typography sx={{ color: "white", textAlign: "center" }}>1183 Budapest, Kosztolányi Dezső utca 1 <br /><br /> Külön irodával nem rendelkezünk, mert nem akarjuk annak fenntartási költségét áthárítani a vásárlókra.</Typography></Grid>
+        <Grid ref={contactPageRef} item lg={4}><Typography sx={{ color: "white", textAlign: "center" }}>1183 Budapest <br /><br /> Külön irodával nem rendelkezünk, mert nem akarjuk annak fenntartási költségét áthárítani a vásárlókra.</Typography></Grid>
       </Grid>
     </Box >
   );
