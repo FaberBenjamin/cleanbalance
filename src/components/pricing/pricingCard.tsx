@@ -12,16 +12,23 @@ import {
   Tooltip,
   Typography,
   useTheme,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  List,
+  ListItem,
 } from "@mui/material";
 import React, { useState } from "react";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import CancelIcon from "@mui/icons-material/Cancel";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import InfoIcon from "@mui/icons-material/Info";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CloseIcon from "@mui/icons-material/Close";
 
 type TableData = {
   service: string;
+  additionalInfo?: string;
   included: boolean;
   isFluidPrice?: boolean;
 };
@@ -41,6 +48,203 @@ export const PricingCard = ({
 }: PricingCardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const theme = useTheme();
+
+  const getMaterialCost = (service: string) => {
+    switch (service) {
+      case "Általános takarítás":
+        return (
+          <Accordion
+            sx={{
+              backgroundColor: "transparent",
+              border: "none",
+              boxShadow: "none",
+            }}
+          >
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography fontWeight="bold">
+                Tisztítószerek megtekintése
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <List>
+                <ListItem>
+                  1 db általános felület és padlótisztító folyadék
+                </ListItem>
+                <ListItem>1 db hideg zsíroldó</ListItem>
+                <ListItem>1 db vízkőoldó</ListItem>
+
+                <ListItem>1 db WC tisztító folyadék</ListItem>
+
+                <ListItem>1 db papírtörlő</ListItem>
+                <ListItem>2 db törlőkendő</ListItem>
+                <ListItem>2 db mosogatószivacs</ListItem>
+                <ListItem>szemeteszsák</ListItem>
+              </List>
+              <Typography>
+                A csomag ára bruttó 5000Ft (az ár tájékoztató jellegü, a csomag
+                árváltozás jogát fenntartjuk!)
+              </Typography>
+              <Typography>
+                A csomag ára változhat 100m^2 feletti terület esetén a szükséges
+                mennyiségtől függően és a terület nagyságától!
+              </Typography>
+              <Typography>
+                Tisztítószer csomag abban az esetben szükséges, ha nem áll
+                rendelkezésre Önnek, a megmaradt szereket otthagyjuk.
+              </Typography>
+              <Typography fontWeight="bold" sx={{ mt: 2 }}>
+                Tisztítószereket megbeszélés alapján is ki lehet választani,
+                miket használjunk ( környezetkímélő-bio, márka, stb.)
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        );
+      case "Nagytakarítás":
+        return (
+          <Accordion
+            sx={{
+              backgroundColor: "transparent",
+              border: "none",
+              boxShadow: "none",
+            }}
+          >
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography fontWeight="bold">
+                Tisztítószerek megtekintése
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <List>
+                <ListItem>
+                  1 db általános felület és padlótisztító folyadék
+                </ListItem>
+                <ListItem>1 db üvegtisztító folyadék</ListItem>
+                <ListItem>1 db bútor ápolószer</ListItem>
+
+                <ListItem>1 db hideg zsíroldó</ListItem>
+                <ListItem>1 db vízkőoldó</ListItem>
+
+                <ListItem>1 db WC tisztító folyadék</ListItem>
+
+                <ListItem>2-3 db papírtörlő</ListItem>
+                <ListItem>4 db törlőkendő</ListItem>
+                <ListItem>2 db mosogatószivacs</ListItem>
+                <ListItem>szemeteszsák</ListItem>
+              </List>
+              <Typography>
+                A csomag ára bruttó 8000Ft (az ár tájékoztató jellegü, a csomag
+                árváltozás jogát fenntartjuk!)
+              </Typography>
+              <Typography>
+                A csomag ára változhat 100m^2 feletti terület esetén a szükséges
+                mennyiségtől függően és a terület nagyságától!
+              </Typography>
+              <Typography>
+                Tisztítószer csomag abban az esetben szükséges, ha nem áll
+                rendelkezésre Önnek, a megmaradt szereket otthagyjuk.
+              </Typography>
+              <Typography fontWeight="bold" sx={{ mt: 2 }}>
+                Tisztítószereket megbeszélés alapján is ki lehet választani,
+                miket használjunk ( környezetkímélő-bio, márka, stb.)
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        );
+      case "Extrém nagytakarítás":
+        return (
+          <Typography sx={{ mt: 3 }}>
+            A tisztítószerek ára extrém takarítás esetében egyedi megbeszélés és
+            számítás, a felmerülő tisztítószerek/eszközök szükségességéről,
+            mennyiségéről és a terület nagysága alapján.
+          </Typography>
+        );
+      case "Felújítás utáni nagytakarítás":
+        return (
+          <Typography sx={{ mt: 3 }}>
+            A tisztítószerek ára felújítás utána nagytakarítás esetében egyedi
+            megbeszélés és számítás, a felmerülő tisztítószerek/eszközök
+            szükségességéről, mennyiségéről és a terület nagysága alapján.
+          </Typography>
+        );
+      case "Szőnyegtisztítás":
+        return (
+          <Accordion
+            sx={{
+              backgroundColor: "transparent",
+              border: "none",
+              boxShadow: "none",
+            }}
+          >
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography fontWeight="bold">
+                Tisztítószerek megtekintése
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <List>
+                <ListItem>Szőnyegtisztító szer </ListItem>
+              </List>
+              <Typography>
+                A csomag ára bruttó 2000Ft (az ár tájékoztató jellegü, a csomag
+                árváltozás jogát fenntartjuk!)
+              </Typography>
+              <Typography>
+                A csomag ára változhat 100m^2 feletti terület esetén a szükséges
+                mennyiségtől függően és a terület nagyságától!
+              </Typography>
+              <Typography>
+                Tisztítószer csomag abban az esetben szükséges, ha nem áll
+                rendelkezésre Önnek, a megmaradt szereket otthagyjuk.
+              </Typography>
+              <Typography fontWeight="bold" sx={{ mt: 2 }}>
+                Tisztítószereket megbeszélés alapján is ki lehet választani,
+                miket használjunk ( környezetkímélő-bio, márka, stb.)
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        );
+        case "Gépi gőztisztítás":
+        return (
+          <Accordion
+            sx={{
+              backgroundColor: "transparent",
+              border: "none",
+              boxShadow: "none",
+            }}
+          >
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography fontWeight="bold">
+                Tisztítószerek megtekintése
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <List>
+                <ListItem>Desztillált víz</ListItem>
+              </List>
+              <Typography>
+                A csomag ára bruttó 1000Ft (az ár tájékoztató jellegü, a csomag
+                árváltozás jogát fenntartjuk!)
+              </Typography>
+              <Typography>
+                A csomag ára változhat 100m^2 feletti terület esetén a szükséges
+                mennyiségtől függően és a terület nagyságától!
+              </Typography>
+              <Typography>
+                Tisztítószer csomag abban az esetben szükséges, ha nem áll
+                rendelkezésre Önnek, a megmaradt szereket otthagyjuk.
+              </Typography>
+              <Typography fontWeight="bold" sx={{ mt: 2 }}>
+                Tisztítószereket megbeszélés alapján is ki lehet választani,
+                miket használjunk ( környezetkímélő-bio, márka, stb.)
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        );
+      default:
+        break;
+    }
+  };
+
   return (
     <>
       <Box
@@ -164,7 +368,14 @@ export const PricingCard = ({
                 <TableBody>
                   {tableData.map((item) => (
                     <TableRow>
-                      <TableCell>{item.service}</TableCell>
+                      <TableCell>
+                        {item.service}
+                        {item.additionalInfo && (
+                          <Typography fontSize="12px" fontStyle="italic">
+                            {item.additionalInfo}
+                          </Typography>
+                        )}
+                      </TableCell>
                       <TableCell sx={{ textAlign: "center" }}>
                         {item.included ? (
                           item.isFluidPrice ? (
@@ -183,15 +394,20 @@ export const PricingCard = ({
                 </TableBody>
               </Table>
               <Alert sx={{ my: "30px" }} severity="error">
-                Éjszaka (22-06 óra között) és vasárnap +30% pótlékot számolunk fel, ünnepnapokon
-                +50% pótlékot számolunk fel díjainkra <br /><br />
+                Éjszaka (22-06 óra között) és vasárnap +30% pótlékot számolunk
+                fel, ünnepnapokon +50% pótlékot számolunk fel díjainkra <br />
+                <br />
                 <Typography fontWeight="bold">
                   Kedvezményeink nem összevonhatóak
                 </Typography>
                 <br />
-                <Typography >
-                 Az első alkalmas/egyszeri megbízások <strong>nem</strong> tartalmazzák: a tisztítószer költségét, a géphasználatot (ha szükséges), a kiszállást (br 3.800 ft / alkalom) és a parkolási díjat.
+                <Typography>
+                  A megbízások <strong>nem</strong>{" "}
+                  tartalmazzák: a tisztítószer költségét, a géphasználatot (ha
+                  szükséges), a kiszállást (br 3.800 ft / alkalom) és a
+                  parkolási díjat.
                 </Typography>
+                {getMaterialCost(tableTitle)}
               </Alert>
             </TableContainer>
           )}

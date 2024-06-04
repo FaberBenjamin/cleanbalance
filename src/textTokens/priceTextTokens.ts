@@ -6,7 +6,7 @@ export const PriceTextTokens = [
       ["Az Általános takarítási szolgáltatásunkban a leggyakoribb otthoni takarítási feladatokat végezzük el. Ide tartozik a nagyobb tárgyakon való portörlés, mint például bútorokon, valamint a porszívózás és a felmosás. Emellett gondoskodunk a csempék, mosdókagylók, zuhanytálca és kád tisztításáról, valamint a WC teljes körű takarításáról. Szolgáltatásunk része továbbá a tűzhely és a mikrohullámú sütő kisebb takarítása is.", "Fontos kiemelni, hogy mindezeket a feladatokat képzett csapatunkkal végezzük, akik hatékonyan dolgoznak és kiváló minőségű munkát nyújtanak. Az ár 4000 Ft/fő/óra, és a takarítást mindig ketten végzik,  mivel így nemcsak hatékonyabbak vagyunk, hanem időt is spórolunk mindannyiunk számára. Hiszünk  abban, hogy a csapatmunka segítségével jobb eredményeket érhetünk el, és minden ügyfelünk  elégedett lesz a végeredménnyel.","  Bízunk benne, hogy ezekkel a szolgáltatásokkal otthona tiszta és friss lesz, így Önnek csak a  kényelmes otthon élvezetére kelljen koncentrálnia."],
     tableData: [
       { service: "Pókhálózás", included: true },
-      { service: "Portörlés (nagyobb tárgyak pl.:bútorok)", included: true },
+      { service: "Portörlés (nagyobb tárgyak pl.:bútorok)", additionalInfo: "(szabad felületeken, 180cm magasságig)", included: true },
       { service: "Porszívózás", included: true },
       { service: "Felmosás", included: true },
       { service: "Mosogatás", included: false },
@@ -25,19 +25,19 @@ export const PriceTextTokens = [
       { service: "Ablakkeret tisztítás", included: false },
       { service: "Függöny mosás", included: false },
       { service: "Csapok, zuhanyfej vízkőtelenítése", included: false },
-      { service: "Tűzhely kisebb tisztítása", included: true },
+      { service: "Tűzhely kisebb tisztítása", additionalInfo: "a tűzhely külső része (a belseje nem)", included: true },
       {
         service: "Tűzhely és sütő zsírtalanítása (nagyobb tisztítása)",
         included: false,
       },
-      { service: "Mikrohullámú sütő kisebb takarítása", included: true },
+      { service: "Mikrohullámú sütő kisebb takarítása", additionalInfo: "A mikrohullámú sütő külső része (a belseje nem)", included: true },
       {
         service: "Mikrohullámú sütő zsírtalanítása (nagyobb tisztítása)",
         included: false,
       },
       { service: "Helységek szegélyeinek takarítása", included: false },
       {
-        service: "Tárgyak portörlése (kisebb tárgyak pl.:csetreszek)",
+        service: "Tárgyak portörlése (kisebb tárgyak pl.: asztali lámpa, ventillátor, stb.)",
         included: false,
       },
     ],
@@ -49,11 +49,11 @@ export const PriceTextTokens = [
       ["Nagytakarítás során az első alkalom mindig különleges, hiszen egy olyan folyamatról van szó, mely során a tisztaság szempontjából kissé elhanyagolt ház vagy lakás újra ragyogni kezd. A pókhálózások eltűnnek, a por leülepedésének nyoma sem marad, és minden felület újra frissen csillog.","","  Az első lépés általában a portörlés, mely során a nagyobb tárgyakat, például bútorokat gondosan áttörlik. Ezután következik a porszívózás, mely során alaposan megtisztítják a padlót és a szőnyegeket. A felmosás pedig friss illatot varázsol a lakásba.","","  A mosogatás és mosás nem csak a konyhai területre korlátozódik, hanem az egész lakásra kiterjed. A csempék, mosdókagylók, zuhanytálca és kád alapos tisztítása alapvető lépés a higiénia megőrzése érdekében. A WC körültekintő tisztítása különösen fontos, hogy a fertőzés kockázatát minimalizálják.  Az ajtók, ajtókeretek és bútorok takarítása nemcsak esztétikailag fontos, hanem az élettartamuk meghosszabbítása érdekében is. A kapcsolók, konnektorok és kilincsek tisztán tartása pedig hozzájárul a lakás általános higiéniai szintjének fenntartásához.",""," Az ablakok és ablakkeretek tisztítása a friss levegő beengedésének és a kilátás élvezetének  elősegítése érdekében fontos. A függönyök mosása és a csapok, zuhanyfej vízkőtelenítése pedig további aprólékos munkát igényel, de elengedhetetlen a tiszta környezet megteremtéséhez. A konyhai terület külön figyelmet igényel. A tűzhely és sütő alapos zsírtalanítása, valamint a mikrohullámú sütő tisztítása elengedhetetlen a higiéniai követelmények teljesítése érdekében. Végül, a helységek szegélyeinek és a kisebb tárgyak, például csetreszek portörlése zárja a takarítási folyamatot, melynek során minden apró részletre odafigyelnek."],
     tableData: [
       { service: "Pókhálózás", included: true },
-      { service: "Portörlés (nagyobb tárgyak pl.:bútorok)", included: true },
+      { service: "Portörlés (nagyobb tárgyak pl.:bútorok és a szekrény teteje)", additionalInfo: "(a szabad felületeken)", included: true },
       { service: "Porszívózás", included: true },
       { service: "Felmosás", included: true },
-      { service: "Mosogatás", included: true },
-      { service: "Mosás", included: true },
+      { service: "Mosogatás", additionalInfo:"(igény szerint)", included: true },
+      { service: "Mosás", additionalInfo:"(igény szerint)", included: true },
       { service: "Csempe felületek tisztítása", included: true },
       { service: "Mosdókagylók tisztítása", included: true },
       { service: "Zuhanytálca tisztítása", included: true },
@@ -66,7 +66,7 @@ export const PriceTextTokens = [
       { service: "Kilincsek takarítása", included: true },
       { service: "Ablak tisztítás", included: true },
       { service: "Ablakkeret tisztítás", included: true },
-      { service: "Függöny mosás", included: true },
+      { service: "Függöny mosás", additionalInfo:"(igény szerint)", included: true },
       { service: "Csapok, zuhanyfej vízkőtelenítése", included: true },
       { service: "Tűzhely kisebb tisztítása", included: true },
       {
@@ -80,7 +80,7 @@ export const PriceTextTokens = [
       },
       { service: "Helységek szegélyeinek takarítása", included: true },
       {
-        service: "Tárgyak portörlése (kisebb tárgyak pl.:csetreszek)",
+        service: "Tárgyak portörlése (kisebb tárgyak pl.:asztali lámpa, ventillátort, stb.)",
         included: true,
       },
     ],
@@ -259,9 +259,9 @@ export const PriceTextTokens = [
   },
   {
     cardPrice: "br. 5750ft / fő / óra",
-    tableTitle: "Szőnyeg- és Kárpittisztítás",
+    tableTitle: "Szőnyegtisztítás",
     tableDescription: ["A gépi szőnyegtisztítás hatékony és gyors megoldást kínál szőnyegeinkben megbújó szennyeződések és foltok eltávolítására. A gépek alaposan tisztítják a szálakat, mélyre hatolva kiszedik a makacs szennyeződéseket is. Ugyanakkor, néha előfordulhat, hogy néhány folt nem távozik teljesen. Fontos tehát, hogy előzetesen felmérjük a szőnyeg állapotát, és reálisan beállítsuk az elvárásainkat a tisztítás eredményeivel kapcsolatban."],
     tableData: [
-      { service: "Szőnyeg- és Kárpittisztítás", included: true }]
+      { service: "Szőnyegtisztítás", included: true }]
   },
 ];
