@@ -1,10 +1,11 @@
-import { Box, Grid, Modal, Typography, useTheme } from "@mui/material";
+import { Box, Grid, IconButton, Modal, Typography, useTheme } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import { useIsMobileView } from "../../utils/useIsMobileView.ts";
 import { dataProtectionTokens } from "../../textTokens/dataProtectionTokens.ts";
+import CloseIcon from "@mui/icons-material/Close";
 
 export const ContactPage = ({ scrollToPage }) => {
   const contactPageRef = useRef(null);
@@ -152,13 +153,25 @@ export const ContactPage = ({ scrollToPage }) => {
             gap: "10px",
             position: "relative",
             [theme.breakpoints.down("md")]: {
-              width: "100vw",
+              width: "81vw",
               height: "100%",
               mt: 0,
               borderRadius: 0,
             },
           }}
         >
+          <IconButton
+            aria-label="close"
+            onClick={() => setIsModalOpen(false)}
+            sx={{
+              position: "absolute",
+              right: 20,
+              top: 10,
+              color: (theme) => theme.palette.grey[500],
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
           {dataProtectionTokens.map((item) => (
             <>
               <Typography
@@ -196,7 +209,9 @@ export const ContactPage = ({ scrollToPage }) => {
                           {item.blockTitle}
                         </Typography>
                         {item.descriptionsList.map((item) => (
-                          <Box sx={{ display: "flex" }}>
+                          <Box sx={{ display: "flex", [theme.breakpoints.down("md")]: {
+                            display: "flex", flexDirection: "column"
+                          }, }}>
                             <Typography>{item.title}</Typography>
                             <Typography>{item.description}</Typography>
                           </Box>
