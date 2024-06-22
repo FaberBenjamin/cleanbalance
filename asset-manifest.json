@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.134be5f4.css",
-    "main.js": "/static/js/main.145aabb5.js",
+    "main.js": "/static/js/main.a63cf4e6.js",
     "static/js/453.81031a7b.chunk.js": "/static/js/453.81031a7b.chunk.js",
+    "static/media/csapatkep.jpg": "/static/media/csapatkep.67dc823b44fd8ce564b0.jpg",
     "static/media/kilincs.jpg": "/static/media/kilincs.2b8fea0b9b6625b365c6.jpg",
     "static/media/felfa.jpg": "/static/media/felfa.f49eba89fa8af0e2b6b6.jpg",
     "static/media/redony-parkany.jpg": "/static/media/redony-parkany.c764230e842658bd6f6a.jpg",
@@ -20,11 +21,11 @@
     "static/media/generali-logo.png": "/static/media/generali-logo.b86ed39f321474a4bff5.png",
     "index.html": "/index.html",
     "main.134be5f4.css.map": "/static/css/main.134be5f4.css.map",
-    "main.145aabb5.js.map": "/static/js/main.145aabb5.js.map",
+    "main.a63cf4e6.js.map": "/static/js/main.a63cf4e6.js.map",
     "453.81031a7b.chunk.js.map": "/static/js/453.81031a7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.134be5f4.css",
-    "static/js/main.145aabb5.js"
+    "static/js/main.a63cf4e6.js"
   ]
 }
