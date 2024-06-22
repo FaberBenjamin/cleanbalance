@@ -24,6 +24,7 @@ export const HomePage = ({ scrollToPage }) => {
 
   const carouselImages = [
     require("../../images/clean-balance.jpg"),
+    require("../../images/homePage/csapatkep.jpg"),
     require("../../images/homePage/csap.jpg"),
     require("../../images/homePage/csap2.jpg"),
     require("../../images/homePage/parkany.jpg"),
@@ -42,6 +43,22 @@ export const HomePage = ({ scrollToPage }) => {
   return index === 1 ? "25%" : ""
   }
 
+  const getBackgroundSize = (index) => {
+
+    if (isMobileView && index === 0) {
+      return "100%"
+    }
+    if (index === 0) {
+      return "50%"
+    }
+
+    if (index === 1 && !isMobileView) {
+      return "75%"
+    }
+
+    return "cover"
+  }
+
   return (
     <>
       <Box sx={{ mt: `${NAV_BAR_HEIGHT}px` }} ref={homePageRef}>
@@ -55,12 +72,7 @@ export const HomePage = ({ scrollToPage }) => {
                   position: "relative",
                   backgroundImage: `url(${item})`,
                   backgroundRepeat: "no-repeat",
-                  backgroundSize:
-                    isMobileView && index === 0
-                      ? "100%"
-                      : index === 0
-                      ? "50%"
-                      : "cover",
+                  backgroundSize: getBackgroundSize(index),
                   backgroundPositionX: "50%",
                   backgroundPositionY: getBackgroundPosition(index),
                   mx: "auto",

@@ -63,7 +63,7 @@ export const PricePage = ({ scrollToPage }) => {
           <Typography textAlign="center" fontSize="20px">
             Tisztaság, minőség, kedvező árak! Cégünk takarító szolgáltatásai
             minden igényt kielégítenek. Minél nagyobb területet kell
-            tisztítanunk, és minél sűrűbb a megrendelés, annál jobb árat tudunk
+            tisztítanunk és minél sűrűbb a megrendelés, annál jobb árat tudunk
             biztosítani.
           </Typography>
           <Typography
