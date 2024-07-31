@@ -56,6 +56,22 @@ export const AboutPage = ({ scrollToPage }) => {
           fontSize="35px"
           sx={{ textAlign: "center", mb: "35px" }}
         >
+          Üdvözöljük a Clean Balance-nál
+        </Typography>
+        <Typography fontSize={isMobileView ? "16px" : "20px"}>
+          Engedje meg, hogy bemutassuk a Clean Balance-t, családi takarító
+          vállalkozásunkat. Célunk, hogy az otthonok és munkahelyek tisztaságát
+          biztosítsuk, és hozzájáruljunk a családok és vállalkozások
+          nyugalmához. Komplex takarítási szolgáltatásainkkal álunk
+          rendelkezésére napi, heti, havi, általános vagy akár nagytakarításról
+          legyen szó.
+        </Typography>
+        <Typography
+          fontWeight="23px"
+          variant="h2"
+          fontSize="35px"
+          sx={{ textAlign: "center", mb: "35px" }}
+        >
           Szolgáltatásaink
         </Typography>
 
@@ -69,7 +85,7 @@ export const AboutPage = ({ scrollToPage }) => {
             margin: "auto",
             backgroundColor: "white",
             p: "30px",
-            borderRadius: "25px"
+            borderRadius: "25px",
           }}
         >
           <Box
@@ -175,7 +191,10 @@ export const AboutPage = ({ scrollToPage }) => {
         <Typography variant="h2" fontSize="25px" sx={{ mt: "35px" }}>
           Személyre szabott takarítási szolgáltatások
         </Typography>
-        <Typography fontSize={isMobileView ? "16px" : "20px"} sx={{ mb: "35px" }}>
+        <Typography
+          fontSize={isMobileView ? "16px" : "20px"}
+          sx={{ mb: "35px" }}
+        >
           Az elmúlt években cégeknél szerzett tapasztalatunkat most a Clean
           Balance-nál kamatoztatjuk. Büszkék vagyunk arra, hogy családi
           vállalkozásként működünk, és minden ügyféllel személyes kapcsolatot
@@ -203,7 +222,7 @@ export const AboutPage = ({ scrollToPage }) => {
             margin: "auto",
             backgroundColor: "white",
             p: "30px",
-            borderRadius: "25px"
+            borderRadius: "25px",
           }}
         >
           <Box
