@@ -5,6 +5,7 @@ import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  Typography,
 } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import { PageTitle } from "../pageTitle.tsx";
@@ -68,8 +69,8 @@ export const GaleryPage = ({ scrollToPage }) => {
           }}
         >
           <Accordion defaultExpanded={isMobileView ? false : true}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{fontWeight: "bold"}}>
-              Képek megtekintése
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography variant="h2" fontSize="20px">Képek megtekintése</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Grid container spacing={4} sx={{ justifyContent: "center" }}>

@@ -43,7 +43,7 @@ export const AboutCard = ({
       sx={{
         width: "300px",
         // @ts-ignore
-        height: "300px",
+        height: "200px",
         backgroundColor: theme.palette.primary.light,
         m: "auto",
         mt: "100px",
@@ -56,7 +56,7 @@ export const AboutCard = ({
       <Box
         sx={{
           width: "290px",
-          height: "300px",
+          height: "200px",
           backgroundColor: theme.palette.primary.main,
           position: "absolute",
           bottom: -10,

@@ -96,9 +96,6 @@ export const PricePage = ({ scrollToPage }) => {
           <br /> <strong>18. kerületi Város kártya</strong> magánszemélyek
           esetén felhasználható <strong>10% kedvezmény</strong>re.
           <br />
-          <strong>Nyugdíjasoknak 10% kedvezmény</strong>t biztosítunk. <br />A
-          kedvezmények <strong>nem</strong> összevonhatóak!
-          <br />
           <br />
           Az árváltozás jogát fenntartjuk. Az áraink bruttó árak és tájékoztató
           jellegűek. Az árak Budapest területén belülre érvényesek.
